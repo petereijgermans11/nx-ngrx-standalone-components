@@ -26,7 +26,7 @@ export const initialUsersState: UsersState = usersAdapter.getInitialState({
 
 const reducer = createReducer(
   initialUsersState,
-  on(UsersActions.initUsers, (state) => ({
+  on(UsersActions.initUsers, (state) =>  ( console.log('daddadadada', [state]),{
     ...state,
     loaded: false,
     error: null,

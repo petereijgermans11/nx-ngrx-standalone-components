@@ -1,0 +1,16 @@
+{
+  "sourceRoot": "libs/home/src",
+  "projectType": "library",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "options": {
+        "jestConfig": "libs/home/jest.config.ts",
+        "passWithNoTests": true
+      },
+      "outputs": ["{workspaceRoot}/coverage/libs/home"]
+    }
+  },
+  "prefix": "app",
+  "name": "home"
+}
